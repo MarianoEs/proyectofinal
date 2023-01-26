@@ -1,13 +1,15 @@
 import './App.css'
 import CardWidget from "./CartWidget/CartWidget";
 import Navbar from "./Navbar/Navbar";
+import ItemListContainer from "./ItemListContainer/ItemListContainer"
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar/>
-      <CardWidget/>
-    </div>
+      <CardWidget cantCarrito ={10}/>
+      <ItemListContainer/>
+    </>
   );
 }
 
