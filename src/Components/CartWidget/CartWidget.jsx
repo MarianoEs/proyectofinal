@@ -1,10 +1,8 @@
-const CardWidget = ({cantCarrito}) => {
+const CardWidget = () => {
     return (
         <>
+            <i className="bi bi-cart3"></i>
             
-            <botton className= "btn btn-dark">Carrito</botton>
-            
-            <p>{cantCarrito}</p>
         </>
     );
 }

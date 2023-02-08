@@ -1,0 +1,36 @@
+[
+    { "id": 1, 
+      "nombre": "Fifa 2022", 
+      "precio": 1000,
+      "stock": 10, 
+      "img":"fifa.jpg" 
+    },
+
+    { "id": 2,
+      "nombre": "Mortal Kombat",
+      "precio": 700,
+      "stock": 20,
+      "img":"mortalKombat.png" 
+    },
+
+    { "id": 3,
+      "nombre": "Spider-man",
+      "precio": 500,
+      "stock": 30,
+      "img":"spiderMan.png" 
+    },
+
+    { "id": 4,
+      "nombre": "Watch Dog",
+      "precio": 1700,
+      "stock": 15,
+      "img":"wacthDog.jpg" 
+    },
+
+    { "id": 5,
+      "nombre": "Call of Duty",
+      "precio": 1700, 
+      "stock": 10,
+      "img":"callOfDuty.png"  
+    }
+  ]
