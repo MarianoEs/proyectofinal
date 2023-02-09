@@ -1,5 +1,6 @@
 [
     { "id": 1, 
+      "idCategoria": 1,
       "nombre": "Fifa 2022", 
       "precio": 1000,
       "stock": 10, 
@@ -7,6 +8,7 @@
     },
 
     { "id": 2,
+      "idCategoria": 1,
       "nombre": "Mortal Kombat",
       "precio": 700,
       "stock": 20,
@@ -14,6 +16,7 @@
     },
 
     { "id": 3,
+      "idCategoria": 2,
       "nombre": "Spider-man",
       "precio": 500,
       "stock": 30,
@@ -21,6 +24,7 @@
     },
 
     { "id": 4,
+      "idCategoria": 3,
       "nombre": "Watch Dog",
       "precio": 1700,
       "stock": 15,
@@ -28,6 +32,7 @@
     },
 
     { "id": 5,
+      "idCategoria": 2,
       "nombre": "Call of Duty",
       "precio": 1700, 
       "stock": 10,
