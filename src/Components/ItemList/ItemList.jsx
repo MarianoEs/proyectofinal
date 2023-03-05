@@ -1,9 +1,16 @@
 import  Item  from "../Item/Item"
+import  ItemCart  from "../ItemCart/ItemCart"
 
-const ItemList = ({products}) => {
+const ItemList = ({products, plantilla}) => {
     return (
         <>
-        {products.map(producto => <Item item={producto} key={producto.id}/>)}
+        {plantilla === 'item' 
+        ? 
+        products.map(producto => <Item item={producto} key={producto.id}/>)
+        :
+        products.map(producto => <ItemCart item={producto} key={producto.id}/>)
+        }
+        
         </>
     );
 }

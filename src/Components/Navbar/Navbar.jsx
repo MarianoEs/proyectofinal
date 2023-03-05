@@ -2,6 +2,7 @@ import CartWidget from "../CartWidget/CartWidget";
 import Secciones from "./Secciones/Secciones";
 import Categorias from "./Categorias/Categorias";
 
+
 const Navbar = () => {
   return (
   <nav className="navbar navbar-expand-lg navbar-dark bg-primary">

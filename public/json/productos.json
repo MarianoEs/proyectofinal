@@ -1,41 +1,73 @@
 [
     { "id": 1, 
-      "idCategoria": 1,
+      "idCategoria": 1, 
       "nombre": "Fifa 2022", 
       "precio": 1000,
       "stock": 10, 
-      "img":"fifa.jpg" 
+      "img":"https://firebasestorage.googleapis.com/v0/b/gamershouse-b228c.appspot.com/o/fifa.jpg?alt=media&token=9355cdaa-b4d2-4e6c-bbc9-d18c7499c28e" 
     },
 
     { "id": 2,
       "idCategoria": 1,
       "nombre": "Mortal Kombat",
-      "precio": 700,
+      "precio": 7000,
       "stock": 20,
-      "img":"mortalKombat.png" 
+      "img":"https://firebasestorage.googleapis.com/v0/b/gamershouse-b228c.appspot.com/o/mortalKombat.png?alt=media&token=43dd54e1-b308-4b9e-9bd1-f3cbc252a44f" 
     },
 
     { "id": 3,
-      "idCategoria": 2,
+      "idCategoria": 1,
       "nombre": "Spider-man",
-      "precio": 500,
+      "precio": 5000,
       "stock": 30,
-      "img":"spiderMan.png" 
+      "img":"https://firebasestorage.googleapis.com/v0/b/gamershouse-b228c.appspot.com/o/spiderMan.png?alt=media&token=a39f6fcf-0417-461a-8e08-ad783119c4d4" 
     },
 
     { "id": 4,
-      "idCategoria": 3,
+      "idCategoria": 1,
       "nombre": "Watch Dog",
       "precio": 1700,
       "stock": 15,
-      "img":"wacthDog.jpg" 
+      "img":"https://firebasestorage.googleapis.com/v0/b/gamershouse-b228c.appspot.com/o/wacthDog.jpg?alt=media&token=af0f8bdb-8c83-4fb8-8275-d7f6c02a8ab2" 
     },
 
     { "id": 5,
-      "idCategoria": 2,
-      "nombre": "Call of Duty",
+      "idCategoria": 1,
+      "nombre": "Call Of Duty",
       "precio": 1700, 
       "stock": 10,
-      "img":"callOfDuty.png"  
+      "img":"https://firebasestorage.googleapis.com/v0/b/gamershouse-b228c.appspot.com/o/callOfDuty.png?alt=media&token=bfcd4034-7766-4b29-ab83-a85bac4955e1"  
+    },
+
+    { "id": 6,
+      "idCategoria": 2,
+      "nombre": "Black Site",
+      "precio": 7000,
+      "stock": 6,
+      "img":"https://firebasestorage.googleapis.com/v0/b/gamershouse-b228c.appspot.com/o/blackSite.jpeg?alt=media&token=22659836-8896-4b6b-8022-c208417e3d5b" 
+    },
+
+    { "id": 7,
+      "idCategoria": 2,
+      "nombre": "Need For Speed",
+      "precio": 3000,
+      "stock": 15,
+      "img":"https://firebasestorage.googleapis.com/v0/b/gamershouse-b228c.appspot.com/o/needforSpeed.jpeg?alt=media&token=fd1b7e93-6edd-4172-957e-9c0dedf9acc8" 
+    },
+
+    { "id": 8,
+      "idCategoria": 2,
+      "nombre": "Spuer Heroes",
+      "precio": 5000,
+      "stock": 6,
+      "img":"https://firebasestorage.googleapis.com/v0/b/gamershouse-b228c.appspot.com/o/superheroes.jpeg?alt=media&token=6f9c2e3a-4a18-41d2-a997-70bb08467745" 
+    },
+
+    { "id": 9,
+      "idCategoria": 3,
+      "nombre": "Conflict",
+      "precio": 4000,
+      "stock": 6,
+      "img":"https://firebasestorage.googleapis.com/v0/b/gamershouse-b228c.appspot.com/o/Conflic.jpeg?alt=media&token=3e73f2af-9172-4deb-a025-d50f6d60065d" 
     }
   ]

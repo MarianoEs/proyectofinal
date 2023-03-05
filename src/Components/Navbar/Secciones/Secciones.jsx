@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
+import React from "react"
 
-const Secciones = () => {
+const Secciones = React.memo(() => {
     return (
     <>
         <li className="nav-item">
@@ -8,14 +9,15 @@ const Secciones = () => {
                 <button className="btn btn-dark">Inicio</button>
             <span className="visually-hidden">(current)</span>
             </Link>
-            <li className="nav-item">
+        </li>
+        <li className="nav-item">
                 <Link className="nav-link" to={"/contacto"}>
                     <button className="btn btn-dark">Contacto</button>
                 </Link>
-            </li>
         </li>
+        
      </>
     );
-}
+})
 
 export default Secciones;
