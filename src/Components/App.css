@@ -48,3 +48,9 @@ img {
 .cardCart {
     max-width: 540px;
 }
+
+.card-footer {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+      }

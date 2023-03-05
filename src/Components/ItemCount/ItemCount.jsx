@@ -12,9 +12,7 @@ const ItemCount = ({valInicial, stock, onAdd}) => {
     return (
         <>
         <button className="btn btn-dark" onClick={() => restar()}> - </button>
-
             {contador}
-            
         <button className="btn btn-dark" onClick={() => sumar()}> + </button>
 
         <button className="btn btn-dark" onClick={() => agregarCarrito()}> Agregar al Carrito </button>
