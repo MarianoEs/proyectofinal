@@ -20,16 +20,16 @@ export const Contacto = () => {
         <form onSubmit={consultarFormulario} ref={datosFormulario}>
         <div className="mb-3">
             <label htmlFor="nombre" className="form-label">Nombre y apellido</label>
-            <input type="text" className="form-control" name="nombre"/>
+            <input type="text" required="required" className="form-control" name="nombre"/>
         </div>
         <div className="mb-3">
             <label htmlFor="email" className="form-label">Email</label>
-            <input type="email" className="form-control" name="email" />
+            <input type="email" required="required" className="form-control" name="email" />
         </div>
         
         <div className="mb-3">
             <label htmlFor="consulta" className="form-label">Consulta</label>
-            <textarea className="form-control" name="consulta" rows={3} defaultValue={""} />
+            <textarea className="form-control" required="required" name="consulta" rows={3} defaultValue={""} />
         </div>
 
         <button type="submit" className="btn btn-primary">Enviar</button>
