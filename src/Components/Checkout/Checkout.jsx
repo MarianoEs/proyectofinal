@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { useCarritoContext } from "../../context/CarritoContext"
 import { Link } from "react-router-dom"
 import React from "react"
@@ -5,7 +6,23 @@ import { useNavigate } from "react-router-dom"
 import {toast} from 'react-toastify'
 import { createOrdenCompra, getProducto, updateProducto } from "../../Firebase/firebase"
 
+
 const CheckOut = () => {
+    const [inputValue1, setInputValue1] = useState ('');
+    const [inputValue2, setInputValue2] = useState ('');
+    const [error, setError]= useState ('');
+
+    const handleInputChange1 = (e)=> {
+        setInputValue1(e.target.value);
+        setError('');
+    }
+
+    const handleInputChange2 = (e)=> {
+        setInputValue2(e.target.value);
+        setError('');
+    }
+    
+    
     const {carrito, emptyCart, totalPrice} = useCarritoContext()
     const datosFormulario = React.useRef()
     let navigate = useNavigate()
@@ -24,13 +41,23 @@ const CheckOut = () => {
             })
         })
 
+        if (inputValue1 === inputValue2) {
+
+
+       
+
         createOrdenCompra(cliente, aux, totalPrice(), new Date().toISOString()).then(ordenCompra =>{
-            toast.success(`¡Muchas gracias por comprar con nosotros!, su orden de compra ${ordenCompra.id
+            toast.success(`¡Muchas gracias por su comprar! su orden de compra con el ID:  ${ordenCompra.id
             } por un total de $ ${new Intl.NumberFormat('de-DE').format(totalPrice())} fue realizada con exito`)
             emptyCart()
             e.target.reset()
             navigate("/")
         })
+
+        }else {
+            setInputValue2('')
+            setError('Los Emails no coinciden')
+        }
 
     }
 
@@ -51,12 +78,16 @@ const CheckOut = () => {
             </div>
                 <div className="mb-3">
                 <label htmlFor="email" className="form-label">Email</label>
-                <input type="email" required="required" className="form-control" name="email" />
+                <input type="email" value={inputValue1} onChange={handleInputChange1}  className="form-control" name="email" />
             </div>
             <div className="mb-3">
                 <label htmlFor="repEmail" className="form-label">Repetir Email</label>
-                <input type="email" required="required" className="form-control" name="repEmail" />
-            </div>
+                <input type="email" value={inputValue2} onChange={handleInputChange2} className="form-control" name="repEmail" />
+                {error 
+                &&
+                <p style ={{color: 'red'}}>Los emails no coinciden</p>
+                }
+            </div> 
             <div className="mb-3">
                 <label htmlFor="celular" className="form-label">Numero telefonico</label>
                 <input type="number" required="required" className="form-control" name="celular" />
